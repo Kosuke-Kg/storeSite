@@ -1,0 +1,23 @@
+@use "../mixin/layouts" as layout;
+@use "../mixin/mediaQuery" as mq;
+
+#top {
+  @include layout.contentsSize;
+
+  .productArea {
+    padding: 0 0 45px;
+  }
+  .viewMore {
+    font-size: 14px;
+    text-align: center;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  @include mq.mediaQuery(sp) {
+    padding-bottom: 110px;
+  }
+}

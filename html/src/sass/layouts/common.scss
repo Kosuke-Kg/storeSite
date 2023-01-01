@@ -1,0 +1,18 @@
+@use "../mixin/layouts" as layout;
+@use "../mixin/fonts" as font;
+
+* {
+  font-family: font.$lato;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  padding-top: clamp(5.25rem, 5.0505rem + 0.8743vw, 5.75rem) !important;
+}
+img {
+  vertical-align: bottom;
+}

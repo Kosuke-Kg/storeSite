@@ -1,0 +1,43 @@
+@use "../mixin/layouts" as layout;
+@use "../mixin/mediaQuery" as mq;
+footer {
+  margin: auto 0 0;
+  padding: 0 0 15px;
+
+  @include mq.mediaQuery(sp) {
+    padding: 0 0 20px;
+  }
+
+  .contentIn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include layout.contentsSize;
+  }
+  @include mq.mediaQuery(sp) {
+    .contentIn {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+  .navBox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .navItem {
+    font-size: 12px;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+#copyright {
+  font-size: 10px;
+}

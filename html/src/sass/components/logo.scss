@@ -1,0 +1,8 @@
+@use "../mixin/fonts" as font;
+@use "../mixin/colors" as color;
+@mixin logo {
+  font-size: 22.5px;
+  font-family: font.$yuGothic;
+  font-weight: 700;
+  color: color.$black;
+}

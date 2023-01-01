@@ -1,0 +1,8 @@
+$pcMaxWidth: 1280px;
+$pcCntPadding: 40px;
+
+@mixin contentsSize {
+  margin: 0 auto;
+  padding: 0 $pcCntPadding;
+  max-width: $pcMaxWidth;
+}
