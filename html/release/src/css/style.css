@@ -417,6 +417,28 @@ footer .navItem:hover {
   font-size: 10px;
 }
 
+#pageTitle {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 14px;
+}
+
 .productArea {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -467,6 +489,30 @@ footer .navItem:hover {
 
 #top .viewMore:hover {
   opacity: 0.5;
+}
+
+#pageTitle {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+#products {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1280px;
+  padding-bottom: clamp(6.25rem, 5.502rem + 3.2787vw, 8.125rem);
+}
+
+#products #sec1 {
+  padding: 30px 0 0;
+}
+
+#products #sec1 #pageTitle {
+  margin: 0 0 30px;
+}
+
+#products #sec1 .productArea {
+  margin: 0 0 45px;
 }
 
 @media screen and (max-width: 1028px) {

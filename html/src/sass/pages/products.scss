@@ -1,0 +1,19 @@
+@use "../mixin/layouts" as layout;
+@use "../components/titles" as title;
+
+#products {
+  @include layout.contentsSize;
+  padding-bottom: clamp(6.25rem, 5.502rem + 3.2787vw, 8.125rem);
+
+  #sec1 {
+    padding: 30px 0 0;
+
+    #pageTitle {
+      margin: 0 0 30px;
+    }
+
+    .productArea {
+      margin: 0 0 45px;
+    }
+  }
+}
