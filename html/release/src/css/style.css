@@ -458,22 +458,18 @@ footer .navItem:hover {
   gap: clamp(0.9375rem, 0.4389rem + 2.1858vw, 2.1875rem) clamp(1.5rem, 1.0512rem + 1.9672vw, 2.625rem);
 }
 
+.listStyle {
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+
 .listStyle .productImg {
   margin-bottom: 12px;
 }
 
-.listStyle .productName {
-  font-size: 12px;
-  line-height: 14px;
-  color: #333333;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
+.listStyle .productName,
 .listStyle .price {
-  font-size: 12px;
-  line-height: 14px;
-  color: #333333;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -487,6 +483,10 @@ footer .navItem:hover {
   position: relative;
   width: 100%;
   padding-bottom: 50%;
+}
+
+.googleMap.act {
+  z-index: -1;
 }
 
 .googleMap iframe {

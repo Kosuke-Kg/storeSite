@@ -5,6 +5,10 @@
   width: 100%;
   padding-bottom: 50%;
 
+  &.act {
+    z-index: -1;
+  }
+
   @include mq.mediaQuery(sp) {
     padding-bottom: 102%;
   }

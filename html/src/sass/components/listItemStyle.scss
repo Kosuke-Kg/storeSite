@@ -1,21 +1,19 @@
 @use "../mixin/colors" as color;
 
 .listStyle {
+  font-size: 12px;
+  line-height: 14px;
+  color: color.$black;
+
   .productImg {
     margin-bottom: 12px;
   }
-  .productName {
-    font-size: 12px;
-    line-height: 14px;
-    color: color.$black;
-    transition: 0.5s;
-  }
+
+  .productName,
   .price {
-    font-size: 12px;
-    line-height: 14px;
-    color: color.$black;
     transition: 0.5s;
   }
+
   &:hover {
     .productName,
     .price {
