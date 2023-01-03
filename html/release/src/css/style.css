@@ -423,6 +423,7 @@ footer .navItem:hover {
 #pageTitle {
   font-size: 14px;
   line-height: 1.2;
+  color: #333333;
 }
 
 .pagination {
@@ -506,6 +507,7 @@ footer .navItem:hover {
 #pageTitle {
   font-size: 14px;
   line-height: 1.2;
+  color: #333333;
 }
 
 #products {
@@ -595,6 +597,37 @@ footer .navItem:hover {
 
 #productsPage #sec1 .productInfo .back:hover {
   opacity: 0.5;
+}
+
+#about {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1280px;
+  padding-bottom: clamp(6.25rem, 5.5519rem + 3.0601vw, 8rem);
+  width: 100vw;
+}
+
+#about #sec1 {
+  padding: 30px 0 0;
+}
+
+#about #sec1 #pageTitle {
+  margin: 0 0 36px;
+}
+
+#about #sec1 .description {
+  max-width: 583px;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #333333;
+}
+
+#about #sec1 .description > * {
+  margin: 0 0 35px;
+}
+
+#about #sec1 .description > *:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1028px) {

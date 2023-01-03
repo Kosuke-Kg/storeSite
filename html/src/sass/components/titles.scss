@@ -1,4 +1,6 @@
+@use "../mixin/colors" as colors;
 #pageTitle {
   font-size: 14px;
   line-height: 1.2;
+  color: colors.$black;
 }

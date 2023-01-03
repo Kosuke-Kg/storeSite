@@ -1,0 +1,30 @@
+@use "../mixin/layouts" as layout;
+@use "../mixin/colors" as colors;
+
+#about {
+  @include layout.contentsSize;
+  padding-bottom: clamp(6.25rem, 5.5519rem + 3.0601vw, 8rem);
+  width: 100vw;
+
+  #sec1 {
+    padding: 30px 0 0;
+
+    #pageTitle {
+      margin: 0 0 36px;
+    }
+
+    .description {
+      max-width: 583px;
+      font-size: 14px;
+      line-height: 1.85;
+      color: colors.$black;
+
+      & > * {
+        margin: 0 0 35px;
+      }
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
