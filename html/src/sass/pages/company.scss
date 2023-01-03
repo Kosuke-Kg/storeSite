@@ -1,0 +1,67 @@
+@use "../mixin/layouts" as layout;
+@use "../mixin/colors" as colors;
+@use "../mixin/mediaQuery" as mq;
+
+#company {
+  @include layout.contentsSize;
+  padding-bottom: clamp(6.25rem, 5.5519rem + 3.0601vw, 8rem);
+  width: 100vw;
+
+  #sec1 {
+    padding: 30px 0 0;
+
+    #pageTitle {
+      margin: 0 0 clamp(3.5rem, 3.9986rem + -2.1858vw, 2.25rem);
+    }
+
+    .infoBox {
+      max-width: 600px;
+    }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 45px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: colors.$black;
+
+      dt {
+        padding: 25px 0;
+        border-bottom: 1px solid colors.$whiteGray;
+        width: 30%;
+
+        @include mq.mediaQuery(sp) {
+          margin: 0 0 15px;
+          padding: 0;
+          border: none;
+          width: 100%;
+        }
+
+        &:last-of-type {
+          border: none;
+        }
+      }
+
+      dd {
+        padding: 25px 0;
+        border-bottom: 1px solid colors.$whiteGray;
+        width: 70%;
+
+        @include mq.mediaQuery(sp) {
+          margin: 0 0 25px;
+          padding-top: 0;
+          width: 100%;
+        }
+
+        &:last-of-type {
+          border: none;
+
+          @include mq.mediaQuery(sp) {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

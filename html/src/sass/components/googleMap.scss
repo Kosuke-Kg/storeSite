@@ -1,0 +1,19 @@
+@use "../mixin/mediaQuery" as mq;
+
+.googleMap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+
+  @include mq.mediaQuery(sp) {
+    padding-bottom: 102%;
+  }
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
