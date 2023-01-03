@@ -4,4 +4,12 @@
   justify-content: center;
   gap: 40px;
   font-size: 14px;
+
+  a {
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }

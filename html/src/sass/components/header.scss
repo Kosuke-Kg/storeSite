@@ -3,16 +3,16 @@
 @use "../mixin/layouts" as layout;
 
 #headerArea {
+  position: fixed;
+  width: 100vw;
   .contentIn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     @include layout.contentsSize;
     padding-top: clamp(1.5625rem, 1.388rem + 0.765vw, 2rem);
     padding-bottom: clamp(1.5625rem, 1.388rem + 0.765vw, 2rem);
     background-color: color.$pureWhite;
-    width: 100vw;
   }
 
   .logo {
